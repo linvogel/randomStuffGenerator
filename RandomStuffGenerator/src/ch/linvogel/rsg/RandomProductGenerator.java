@@ -69,8 +69,8 @@ public class RandomProductGenerator {
 		}
 		
 		for (String name : arr) {
-			int price = Math.min((int) (2500 + Math.round(random.nextGaussian()*500)), 50);
-			int stock = 1 + r.nextInt(50) + Math.min((int) (15 + Math.round(random.nextGaussian()*50)), 0);
+			int price = Math.max((int) (2500 + Math.round(random.nextGaussian()*500)), 50);
+			int stock = 1 + r.nextInt(50) + Math.abs((int) (15 + Math.round(random.nextGaussian()*50)));
 			out.add(new Product(name, price, stock));
 		}
 		
