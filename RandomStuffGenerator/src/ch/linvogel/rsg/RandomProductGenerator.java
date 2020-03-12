@@ -54,7 +54,7 @@ public class RandomProductGenerator {
 		
 	}
 	
-	public LinkedList<Product> generateProducts(int i, long seed) {
+	public static LinkedList<Product> generateProducts(int i, long seed) {
 		i = Math.min(i, productNames.length);
 		LinkedList<Product> out = new LinkedList<Product>();
 		

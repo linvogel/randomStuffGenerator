@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class RandomCustomerGenerator {
 	
-	public LinkedList<Customer> generateRandomCustomers(int i, long seed) {
+	public static LinkedList<Customer> generateRandomCustomers(int i, long seed) {
 		RandomNameGenerator.setSeed(seed);
 		LinkedList<Customer> out = new LinkedList<Customer>();
 		for (int j = 0; j < i; j++) {
